@@ -1,29 +1,37 @@
 
-Activity:
+# Activity:
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+foods = {
+  apples: 23, 
+  grapes: 507, 
+  eggs: 48
+}
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+ 
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+
+p foods[:grapes]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+
+foods[:avocados] = 12
+p foods
 
 
 #-------------------
@@ -37,16 +45,28 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
+email1 = {
+  sender: "andrewgbingham@gmail.com",
+  recipient: "pab522@gmail.com",
+  subject: "How is the boyo?",
+  date_sent: "12/09/2022",
+  time_sent: "6:06 PM MST",
+  body: "Hey there, how is the little tyke? Hope he's doing well! Talk soon. Love, Andrew"
+}
+
 # Write code that prints your email hash to the terminal.
 
+p email1
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+
+p email1.keys 
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+
+p email1.values
 
 
 #-------------------
@@ -97,3 +117,32 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails = [
+  email1 = {
+    sender: "andrewgbingham@gmail.com",
+    recipient: "pab522@gmail.com",
+    subject: "How is the boyo?",
+    date_sent: "12/09/2022",
+    time_sent: "6:06 PM MST",
+    body: "Hey there, how is the little tyke? Hope he's doing well! Talk soon. Love, Andrew"
+  },
+  email2 = {
+    sender: "andrewgbingham@gmail.com",
+    recipient: "joel.bingham@stny.twcbc.com",
+    subject: "How bout them Giants? LOL",
+    date_sent: "12/09/2022",
+    time_sent: "6:14 PM MST",
+    body: "Hey Pop, hope all is well back in NY. Did you get the mice taken care of? Give me a ring sometime. Love, Andrew "
+  },
+  email3 = {
+  sender: "andrewgbingham@gmail.com",
+  recipient: "johndkelly@gmail.com",
+  subject: "Did ya get that thing I sent ya??",
+  date_sent: "12/09/2022",
+  time_sent: "6:16 PM MST",
+  body: "Hey dude, did you see Sarah Silverman is playing at comedy works downtown? We should totally go!"
+}
+]
+
+p emails
